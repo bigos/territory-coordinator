@@ -1,1 +1,1 @@
-web: java $JVM_OPTS -cp target/clojure-getting-started-standalone.jar clojure.main -m clojure-getting-started.web
+web: java $JVM_OPTS -cp target/territory-coordinator-standalone.jar clojure.main -m territory-coordinator.web

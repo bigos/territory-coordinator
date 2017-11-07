@@ -1,7 +1,8 @@
+# territory coordinator
 
-# clojure-getting-started
+Derived from template of clojure-getting-started
 
-A barebones Clojure app, which can easily be deployed to Heroku.  
+A barebones Clojure app, which can easily be deployed to Heroku.
 
 This application support the [Getting Started with Clojure](https://devcenter.heroku.com/articles/getting-started-with-clojure) article - check it out.
 
@@ -10,11 +11,13 @@ This application support the [Getting Started with Clojure](https://devcenter.he
 Make sure you have Clojure installed.  Also, install the [Heroku Toolbelt](https://toolbelt.heroku.com/).
 
 ```sh
-$ git clone https://github.com/heroku/clojure-getting-started.git
-$ cd clojure-getting-started
+$ git clone https://github.com/bigos/territory-coordinator.git
+$ cd territory-coordinator
+$ lein deps
+$ lein compile
 $ lein repl
-user=> (require 'clojure-getting-started.web)
-user=>(def server (clojure-getting-started.web/-main))
+user=> (require 'territory-coordinator.web)
+user=>(def server (territory-coordinator.web/-main))
 ```
 
 Your app should now be running on [localhost:5000](http://localhost:5000/).
@@ -36,4 +39,3 @@ or
 For more information about using Clojure on Heroku, see these Dev Center articles:
 
 - [Clojure on Heroku](https://devcenter.heroku.com/categories/clojure)
-
