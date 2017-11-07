@@ -11,8 +11,10 @@ This application support the [Getting Started with Clojure](https://devcenter.he
 Make sure you have Clojure installed.  Also, install the [Heroku Toolbelt](https://toolbelt.heroku.com/).
 
 ```sh
-$ git clone https://github.com/heroku/territory-coordinator.git
+$ git clone https://github.com/bigos/territory-coordinator.git
 $ cd territory-coordinator
+$ lein deps
+$ lein compile
 $ lein repl
 user=> (require 'territory-coordinator.web)
 user=>(def server (territory-coordinator.web/-main))
