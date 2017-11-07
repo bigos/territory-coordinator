@@ -5,7 +5,8 @@
             [clojure.java.io :as io]
             [ring.adapter.jetty :as jetty]
             [environ.core :refer [env]]
-            [camel-snake-kebab.core :as kebab]))
+            [camel-snake-kebab.core :as kebab]
+            [clojure.java.jdbc :as db]))
 
 (defn splash []
   {:status 200
